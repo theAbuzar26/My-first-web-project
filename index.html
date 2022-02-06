@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500&family=Moon+Dance&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* CSS reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-image: url('https://wallpaperaccess.com/full/834264.jpg');
+            color: white;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .btn {
+            margin: 9px 2px;
+            padding: 4px 9px;
+            border: 2px solid gray;
+            border-radius: 12px;
+            background-color: black;
+            color: white;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+
+        .btn:hover {
+            background-color: #595c5d;
+        }
+
+        .left img {
+            width: 82px;
+            display: block;
+            margin: auto;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+            font-size: 21px;
+        }
+
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 47px;
+            top: 22px;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(79, 248, 49); */
+            display: block;
+            width: 43%;
+            margin: 22px auto;
+        }
+
+        .right {
+            /* border: 2px solid rgb(240, 106, 106); */
+            display: inline-block;
+            position: absolute;
+            right: 47px;
+            top: 22px;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+
+
+        .navbar li {
+            display: inline-block;
+            padding: 3px 4px;
+
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 0px 5px;
+            font-size: 20px;
+
+        }
+
+        .navbar li a:hover {
+
+            color: rgb(223, 243, 132);
+        }
+
+        .navbar li a.active,
+        .navbar li a:hover {
+            text-decoration: underline;
+            color: #ab99a0;
+        }
+
+        .container {
+
+            /* border: 2px solid white; */
+            width: 33%;
+            margin: 5px 58px;
+            padding: 70px 70px;
+            border-radius: 26px;
+        }
+
+        .in input {
+            border: 2px solid black;
+            width: 264px;
+            height: 20px;
+            text-align: center;
+            display: block;
+            margin: 3px auto;
+            font-size: 17px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhaijaan 2', cursive;
+        }
+       .container h1{
+           text-align: center;
+       }
+       .in .btn{
+           display: block;
+           margin: 4px auto;
+           width: 269px;
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/000/595/983/small/04012019-25.jpg"
+                alt="no image found">
+            <div>
+                Galaxy fitness
+            </div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/home.html" class="active" target="_blank" >Home</a> </li>
+                    <li><a href="/about us.html" target=_blank" ">About US</a> </li>
+                    <li><a href="/fitnesscalc.html" target="_blank" >Fitness Calculator</a> </li>
+                    <li><a href="/contactus.html" target="_blank" >Contact US</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email US</button>
+        </div>
+        <div class="container">
+            <h1>Join the Best Gym Now</h1>
+            <form action="backend.php">
+                <div class="in">
+                    <input type="text" placeholder="Enter Your Name"  required>
+                </div>
+                <div class="in">
+                    <input type="number" placeholder="Contact no"required>
+                </div>
+                <div class="in">
+                    <input type="email" placeholder="Email id"required>
+                </div>
+                <div class="in">
+                    <input type="text" placeholder="Adress"required>
+                </div>
+                <div class="in">
+                    <button class="btn">Submit</button>
+                </div>
+
+            </form>
+        </div>
+    </header>
+</body>
+
+</html>
